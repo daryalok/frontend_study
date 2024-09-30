@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Опросник для обладателей магических животных</title>
+</head>
+
+<body>
+    <h1>Опросник для обладателей магических животных</h1>
+    <form action="script.php" method="POST">
+        <label for="name">Кличка питомца</label>
+        <input type="text" id="name" name="name" required /> <br />
+        <label for="owner_info">Имя и контакты владельца</label>
+        <input type="text" id="owner_info" name="owner_info" required /> <br>
+        <label for="pet_type">Порода питомца</label>
+        <select id="pet_type" name "pet_type" required>
+            <option value="">Выберите породу</option>
+            <option value="dragons">Драконы</option>
+            <option value="amphibians">Амфибии</option>
+            <option value="birds">Птицы</option>
+            <option value="unicorn">Единороги</option>
+            <option value="others">Другие магические</option>
+        </select>
+        <br />
+        <label>Питание</label>
+        <input type="checkbox" name="eat_type" value="dry">
+        <label>сухой корм</label>
+        <input type="checkbox" name="eat_type" value="wet">
+        <label>влажный корм</label>
+        <input type="checkbox" name="eat_type" value="natural">
+        <label>натуральный корм</label>
+        <br />
+        <label>Пол:</label>
+        <input type="radio" id="pet-gender-male" name="pet-gender" value="male" required>
+        <label for="pet-gender-male">самец</label>
+        <input type="radio" id="pet-gender-female" name="pet-gender" value="female" required>
+        <label for="pet-gender-female">самка</label>
+        <br />
+        <label for "comment">Комментарий владельца</label>
+        <textarea rows="10"></textarea>
+        <br />
+        <label for="file">Приложить фото питомца</label>
+        <input type="file" id="file" /> <br />
+        <button>Сохранить</button>
+    </form>
+
+</body>
+
+</html>
