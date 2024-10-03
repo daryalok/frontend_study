@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outdoor Exploration</title>
+    <style>
+        /* Frame */
+        .frame {
+            position: absolute;
+            height: 59px;
+            left: 8.33%;
+            right: 8.33%;
+            top: 10px;
+            background: #FFFFFF;
+        }
+
+        /* Logo */
+        .logo {
+            position: absolute;
+            height: 39px;
+            left: 1.33%;
+            right: 88%;
+            top: calc(50% - 39px/2);
+        }
+
+        /* Navigation */
+        .nav {
+            position: absolute;
+            height: 59px;
+            left: 0%;
+            right: 18.08%;
+            top: calc(50% - 59px/2);
+        }
+
+        .nav span {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 14px;
+            color: #444444;
+            margin-right: 20px;
+        }
+
+        .shop {
+            left: 2.13%;
+            right: 92.54%;
+            top: 20px;
+            font-size: 13px;
+        }
+
+        .our-team {
+            left: 25.42%;
+            right: 64.08%;
+            top: 20px;
+        }
+
+        .about-us {
+            left: 11.72%;
+            right: 78.84%;
+            top: 20px;
+        }
+
+        .categories {
+            left: 60.43%;
+            right: 27.85%;
+            top: 19px;
+            font-size: 13px;
+            color: #222222;
+        }
+
+        .buyers-guides {
+            left: 40.18%;
+            right: 44.75%;
+            top: 20px;
+        }
+
+        /* Cart */
+        .cart-frame {
+            position: absolute;
+            height: 44px;
+            left: 84.41%;
+            right: 0%;
+            top: 8px;
+        }
+
+        .cart {
+            position: absolute;
+            left: 34.4%;
+            right: 36.8%;
+            height: 23px;
+            top: calc(50% - 23px/2 - 0.5px);
+            font-family: 'Poppins';
+        }
+    </style>
+</head>
+
+<body>
+    <div class="frame">
+
+        <div class="logo">
+
+            <svg width="128" height="39" viewBox="0 0 128 39" fill="none">
+            </svg>
+            <image href="./assets/IMAGE.svg" width="128" height="39" />
+
+        </div>
+        <div class="nav">
+            <span class="shop">Shop</span>
+            <span class="our-team">Our Team</span>
+            <span class="about-us">About Us</span>
+            <span class="categories">Categories</span>
+            <span class="buyers-guides">Buyer's Guides</span>
+        </div>
+        <div class="cart-frame">
+            <div class="cart">
+                <span class="cart-text">Cart</span>
+                <div class="cart-icon">
+                    <span class="cart-number">0</span>
+                </div>
+            </div>
+            <div class="buy-template">Buy template</div>
+        </div>
+    </div>
+
+</body>
+
+</html>

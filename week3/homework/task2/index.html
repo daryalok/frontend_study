@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Блог зелёного кота</title>
+    <style>
+        nav {
+            display: flex;
+
+            /* Выравниваем навигацию вправо */
+            margin-top: 10px;
+
+        }
+
+        img {
+            width: 10%;
+            height: auto;
+        }
+    </style>
+</head>
+<header>
+    <img src="./assets/logo.svg" alt="raketa" />
+
+    <nav>
+        <ul>
+            <li><a href="#"> Мои статьи</a></li>
+            <li><a href="#"> Мои проекты</a></li>
+            <li><a href="#"> Мои контакты</a></li>
+        </ul>
+    </nav>
+</header>
+
+<body>
+    <main>
+        <div>
+            <h1 style="font-size: 30px; font-style: normal; color: rgb(24, 133, 20);" Портфолио блогера Зеленый кот
+                </h1>
+                <p> Привет, земляне </p>
+                <img src="./assets/IMG_9967100-copy.gif" alt="logo">
+        </div>
+        <div>
+            Cмотрите видео на моем ютуб канале <a href="https://www.youtube.com/live/6EghRDVTFUM?feature=shared"
+                target="_blank">здесь</a>
+        </div>
+        <section>
+            <h2>Статьи</h2>
+
+            <article>
+                <h3>Как на Марсе нашли органику </h3>
+                <img src="https://www.universetoday.com/wp-content/uploads/2023/06/image-1600-799af8d16c391d1b9aada552e5a86f59.jpeg"
+                    alt="Марс и органика">
+                <p>Недавно ученые NASA поделились «очень любопытным» открытием органических соединений на Марсе. Но
+                    чтобы понять важность недавнего открытия, стоит сначала ознакомиться с опытом и открытиями
+                    предыдущих….</p>
+            </article>
+
+            <article>
+                <h3>Земля глазами астероида </h3>
+                <img src="data:image/jpeg;base64,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"
+                    alt="Земля глазами астероида">
+                <p>В этот знаменательный день Конца Света хочется поговорить о том, что мы имеем, но в суматохе дней
+                    забываем ценить. Поговорим о нашей общей Земле. Точнее, посмотрим на нее из космоса при помощи
+                    различных автоматических и пилотируемых аппаратов, созданных нашей цивилизацией. Причем
+                    посмотрим на Землю не с близкой, круговой или геостационарной орбиты, а издалека.
+                </p>
+            </article>
+
+            <article>
+                <h3>Есть ли жизнь в Солнечной системе? </h3>
+                <img src="https://assets-webflow.ngcdn.ru/cdn.prod/599873abab717100012c91ea/64799fcc871e2dd95160f945_%D1%81%D0%BE%D0%BB%D0%BD%D0%B5%D1%87%D0%BD%D0%B0%D1%8F%20%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0.png"
+                    alt="Солнечная система">
+                <p>Почему на Земле есть жизнь, а в других местах нет?
+
+                    На самом деле мы точно не знаем: может быть, жизнь есть не только на Земле. Просто обитателей
+                    окрестного космоса пока не видно и не слышно. Жителям Земли невероятно повезло оказаться в
+                    довольно спокойном участке Галактики, рядом с очень стабильной звездой и на планете с круговой
+                    орбитой, идеально расположенной в «зоне жизни». Видимо, жизненным формам в ближайших к Земле
+                    областях космоса повезло меньше..</p>
+            </article>
+        </section>
+
+        <form>
+            <p> А вы бы полетели в космос? </p>
+            <input type="checkbox" name="space" value="1" checked="checked" />
+            Это моя большая мечта, без сомнений полетел бы <br />
+            <input type="checkbox" name="space" value="2" />
+            Нет, страшно и риски большие <br />
+            <input type="checkbox" name="space" value="3" />
+            Думаю черещ 30 лет подумаю об этом <br />
+        </form>
+        <img src="https://zelenyikot.com/wp-content/uploads/2017/05/%D0%BA%D0%BE%D1%82.jpg" alt="foto bloger">
+    </main>
+    <footer>
+        <p> Зеленый кот </p>
+        <p>2024</p>
+        <address>
+            <p>Связаться со мной по эл. почте:
+                <a href="mailto:greencat@example.com">greencat@example.com</a>
+            </p </footer>
+</body>
