@@ -1,0 +1,17 @@
+.title {
+    font-size: 40px;
+    color: blueviolet
+}
+
+.subtitle {
+    font-size: 30px;
+    color: brown;
+}
+
+h1 {
+    color: red;
+}
+
+#title {
+    color: blue;
+}
