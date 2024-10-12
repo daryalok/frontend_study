@@ -15,3 +15,8 @@ h1 {
 #title {
     color: blue;
 }
+
+#companyname {
+    margin: 20px;
+    font-family: 'Verdana', Times
+}
