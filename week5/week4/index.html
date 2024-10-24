@@ -6,11 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
+    <style>
+        body {
+            margin: 0;
+        }
+
+        div {
+            border: 1px solid red;
+            width: calc(100% - 80px - 60px - 2px);
+            height: 200px;
+            padding: 40px;
+            margin: 30px;
+            display: inline;
+            /*  box-sizing: border-box;*/
+        }
+
+        span {
+            border: 1px solid blueviolet;
+            width: 10%;
+            display: inline-block;
+        }
+    </style>
 </head>
 
 <body>
-    <h1 class="title">hello</h1>
-    <h2 class="subtitle">World</h2>
+    <div>hello</div>
+    <span>hello</span>
 </body>
 
 </html>
