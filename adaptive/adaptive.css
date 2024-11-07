@@ -1,0 +1,111 @@
+/* Базовые стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header */
+header {
+    background-color: grey;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+}
+
+/* Wrapper для элементов "more" */
+.more_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 16px;
+    margin-top: 40px;
+    justify-content: center;
+}
+
+.more,
+.more3 {
+    background-color: rgb(243, 215, 121);
+    padding: 15px;
+    flex: 1 1 100%;
+    max-width: 100%;
+}
+
+footer {
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+}
+
+.footer_item {
+    background-color: rgb(214, 233, 233);
+    padding: 16px;
+    flex-grow: 1;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 60px);
+}
+
+.main {
+    background-color: rgb(226, 196, 160);
+    padding: 16px;
+    flex-grow: 1;
+}
+
+.aside {
+    background-color: rgb(176, 247, 176);
+    padding: 16px;
+    width: 100%;
+}
+
+
+
+@media (min-width: 320px) {
+
+    /* Планшеты */
+    .more {
+        flex: 1 1 50%;
+    }
+
+    footer {
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    /* Десктопы */
+    body {
+        font-size: 18px;
+    }
+
+    .more {
+        flex: 1 1 33.33%;
+        /* Три элемента в строку */
+    }
+
+    header {
+        height: 10vh;
+    }
+
+    main {
+        flex-direction: row;
+    }
+
+    .aside {
+        width: 30%;
+    }
+}
