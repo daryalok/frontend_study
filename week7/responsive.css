@@ -1,0 +1,108 @@
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+header {
+    background-color: grey;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+}
+
+
+.more_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 16px;
+    margin-top: 40px;
+}
+
+
+.more,
+.more3 {
+    background-color: rgb(243, 215, 121);
+    padding: 15px;
+    flex-grow: 1;
+}
+
+.more3 {
+    width: 100%;
+}
+
+
+footer {
+    background-color: grey;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 16px;
+}
+
+.footer_item {
+    background-color: rgb(214, 233, 233);
+    padding: 16px;
+    flex-grow: 1;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 60px);
+}
+
+.main {
+    background-color: rgb(226, 196, 160);
+    padding: 16px;
+    flex-grow: 3;
+}
+
+.aside {
+    background-color: rgb(176, 247, 176);
+    padding: 16px;
+    flex-grow: 2;
+    width: 100%;
+}
+
+/* Медиазапросы для адаптивности */
+
+@media (min-width: 768px) {
+
+    /* Боковая колонка и основной контент на больших экранах */
+    main {
+        flex-direction: row;
+        height: calc(100vh - 60px);
+    }
+
+    .aside {
+        width: 30%;
+    }
+}
+
+@media (min-width: 992px) {
+
+    /* Стили для крупного экрана */
+    body {
+        font-size: 18px;
+    }
+
+    header {
+        height: 15vh;
+    }
+
+    .footer_item {
+        flex: 1;
+    }
+}
