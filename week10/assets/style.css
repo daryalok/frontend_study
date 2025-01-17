@@ -1,0 +1,30 @@
+body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+div.container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    max-width: 50%;
+    height: auto;
+    border: 2px solid #000;
+}
+
+button {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
