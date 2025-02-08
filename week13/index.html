@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday</title>
+</head>
+
+<body>
+
+    <h1 style="font-size: background-origin: padding-box;;">Дни до дня рождения</h1>
+
+    <label for="start"></label>
+    <input type="date" id="start" name="birtday-start value=дд мм ггг">
+    <button class="button" id="btn">посчитать</button>
+
+
+    <script>
+        const button = document.querySelector(".button");
+        const birstdayInput = document.getElementById('start');
+        button.addEventListener("click", () => {
+            const birthdayInputValue = birstdayInput.value;
+            const date = new Date();
+            let birthday = new Date(birthdayInputValue);
+            let days = Math.ceil((birthday - date) / (1000 * 60 * 60 * 24));
+
+            // check
+            if (date > birthday) {
+
+            }
+            const paragraph = document.createElement('p');
+            button.after(paragraph);
+            paragraph.textContent = "До вашего дня рождения осталось :" + days + "дней";
+        });
+    </script>
+
+    <skript src="index.js"></skript>
+</body>
+
+</html>
