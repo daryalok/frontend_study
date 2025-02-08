@@ -14,24 +14,39 @@
     <label for="start"></label>
     <input type="date" id="start" name="birtday-start value=дд мм ггг">
     <button class="button" id="btn">посчитать</button>
-
+    <p id="error">Пожалуйста выберите дату рождения</p>
+    <p id="result"></p>
 
     <script>
         const button = document.querySelector(".button");
-        const birstdayInput = document.getElementById('start');
+        const birthdayInput = document.getElementById('start');
+        const error = document.getElementById('error');
+        const result = document.getElementById("result");
         button.addEventListener("click", () => {
-            const birthdayInputValue = birstdayInput.value;
+            const birthdayInputValue = birthdayInput.value;
+            if (!birthdayInput) {
+                error.style.display = "block";
+                error.style.color = "red";
+                result.textContent = "";
+                return;
+            } else {
+                error.style.display = "none";
+                //button.disabled = false;
+            }
             const date = new Date();
             let birthday = new Date(birthdayInputValue);
-            let days = Math.ceil((birthday - date) / (1000 * 60 * 60 * 24));
+
 
             // check
-            if (date > birthday) {
+            if (date >= birthday) {
+                birthday.setFullYear(date.getFullYear() + 1)
 
             }
-            const paragraph = document.createElement('p');
-            button.after(paragraph);
-            paragraph.textContent = "До вашего дня рождения осталось :" + days + "дней";
+
+            let days = Math.ceil((birthday - date) / (1000 * 60 * 60 * 24));
+            //  const paragraph = document.createElement('p');
+            //button.after(paragraph);
+            result.textContent = "До вашего дня рождения осталось :" + days + "дней";
         });
     </script>
 
